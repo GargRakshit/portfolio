@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshit's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">>_Portfolio</h1>
+        <nav class="nav_links">
+            <a href="#about_section" class="nav_link">About</a>
+            <a href="#skills_section" class="nav_link">Skills</a>
+            <a href="#projects_section" class="nav_link">Projects</a>
+            <a href="#contact_section" class="nav_link">Contact</a>
+        </nav>
+        <div class="misc_btns">
+            <img src="images/linkedin_logo.png" class="nav_btn" id="linkedin_profile" onclick="openLinkedin()" alt="LinkedIn">
+            <img src="images/github_logo.png" class="nav_btn" id="github_profile" onclick="openGithub()" alt="GitHub">
+            <img src="images/gmail.png" class="nav_btn" id="mail_profile" onclick="mailDirect()" alt="Mail">
+        </div>
+        <button class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">☰</button>
+    </header>
+    <div class="mobile_menu" id="mobile_menu">
+        <a href="#about_section" class="mobile_nav_link">About</a>
+        <a href="#skills_section" class="mobile_nav_link">Skills</a>
+        <a href="#projects_section" class="mobile_nav_link">Projects</a>
+        <a href="#contact_section" class="mobile_nav_link">Contact</a>
+    </div>
+
+    <section class="hero">
+        <div class="typewriter gradient_text">Hi! I am Rakshit Garg, a CSE student.</div>
+        <div class="main_content">
+            <div class="left">
+                <div class="main_heading">Building the <span class="gradient_text">future</span><br>with code</div>
+                <div class="main_desc">Passionate about computers, software development and learning new things.</div>
+            </div>
+            <div class="right">
+                <img src="images/photo.jpg">
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section class="about" id="about_section">
+        <div class="about_left">
+            <div class="about_heading"><span class="gradient_text">></span> About Me</div>
+            <div class="about_content">
+                <p class="about_desc">
+                    I'm a Computer Science student with a passion for software development and problem-solving.
+                    My journey in tech began when I built my first website at 12 using HTML and CSS, and I've been hooked ever since.
+                </p>
+                <p class="about_desc gradient_text">
+                    Currently pursuing my degree in Computer Science, I focus on web development, and data structures & algorithms.
+                    I enjoy about learning and trying new things out.
+                </p>
+                <p class="about_desc">
+                    When I am not coding, you can find me listening or jamming to music, watching anime, or 
+                    some educational documentaries. I also like to do online coding challenges to test out 
+                    and refine my skills.
+                </p>
+            </div>
+        </div>
+        <div class="about_right">
+            <div class="edu_head">Education</div>
+            <div class="edu_inst">> B. Tech. in Computer Science and Engineering</div>
+            <div class="edu_desc">VIT University Vellore • 2023 - Present</div>
+            <div class="edu_inst">> Basic Senior Secondary Education</div>
+            <div class="edu_desc">BBPS, Rohini • 2009 - 2023</div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section class="skills" id="skills_section">
+        <div class="skills_heading"><span class="gradient_text">></span> Skills</div>
+        <div class="skills_container">
+            <div class="skill_category">
+                <div class="category_title">Programming Languages</div>
+                <div class="skill_list">
+                    <div class="skill_item">JavaScript</div>
+                    <div class="skill_item">Python</div>
+                    <div class="skill_item">Java</div>
+                    <div class="skill_item">C++</div>
+                    <div class="skill_item">HTML/CSS</div>
+                </div>
+            </div>
+            
+            <div class="skill_category">
+                <div class="category_title">Web Development</div>
+                <div class="skill_list">
+                    <div class="skill_item">React.js</div>
+                    <div class="skill_item">HTML/CSS</div>
+                    <div class="skill_item">JavaScript</div>
+                </div>
+            </div>
+            
+            <div class="skill_category">
+                <div class="category_title">Tools & Technologies</div>
+                <div class="skill_list">
+                    <div class="skill_item">Git</div>
+                    <div class="skill_item">GitHub</div>
+                    <div class="skill_item">VS Code</div>
+                    <div class="skill_item">Figma</div>
+                </div>
+            </div>
+            
+            <div class="skill_category">
+                <div class="category_title">Soft Skills</div>
+                <div class="skill_list">
+                    <div class="skill_item">Problem Solving</div>
+                    <div class="skill_item">Team Collaboration</div>
+                    <div class="skill_item">Communication</div>
+                    <div class="skill_item">Time Management</div>
+                    <div class="skill_item">Adaptability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section class="projects" id="projects_section">
+        <div class="projects_heading"><span class="gradient_text">></span> Projects</div>
+        <div class="projects_container">
+
+            <div class="project_card">
+                <div class="iframe_container">
+                    <iframe src="index.html" class="project_iframe" title="Personal Portfolio Website"></iframe>
+                </div>
+                <div class="project_content">
+                    <h3 class="project_title">Personal Portfolio Website</h3>
+                    <p class="project_desc">A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+                    <div class="project_tech">
+                        <span class="tech_tag">HTML</span>
+                        <span class="tech_tag">CSS</span>
+                        <span class="tech_tag">JavaScript</span>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/GargRakshit/portfolio" class="project_link"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card">
+                <img src="/images/POS.png" class="project_img">
+                <div class="project_content">
+                    <h3 class="project_title">POS System</h3>
+                    <p class="project_desc">A point of sale system to help track inventory, billing, employee details etc.</p>
+                    <div class="project_tech">
+                        <span class="tech_tag">C++</span>
+                        <span class="tech_tag">OOP</span>
+                        <span class="tech_tag">DSA</span>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/GargRakshit/OOPS-group-project" class="project_link"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_card">
+                <img src="/images/dino.png" class="project_img" alt="Project 2">
+                <div class="project_content">
+                    <h3 class="project_title">Dino Game</h3>
+                    <p class="project_desc">The classic chrome dino game made in a beautiful way.</p>
+                    <div class="project_tech">
+                        <span class="tech_tag">Python</span>
+                        <span class="tech_tag">Pygame</span>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/GargRakshit/Dino-Game" class="project_link"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_card">
+                <img src="/images/lms.png" class="project_img" alt="Project 3">
+                <div class="project_content">
+                    <h3 class="project_title">Library Management System</h3>
+                    <p class="project_desc">A software to help keep track of the books in a library.</p>
+                    <div class="project_tech">
+                        <span class="tech_tag">Python</span>
+                        <span class="tech_tag">Data Structures</span>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/GargRakshit/Library-Management-System" class="project_link"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section class="contact" id="contact_section">
+        <div class="contact_heading"><span class="gradient_text">></span> Contact Me</div>
+        <div class="contact_container">
+            <div class="contact_form">
+                <h3 class="form_title">Get In Touch</h3>
+                <form id="contact_form">
+                    <div class="form_group">
+                        <label for="name" class="form_label">Name</label>
+                        <input type="text" id="name" class="form_input" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="email" class="form_label">Email</label>
+                        <input type="email" id="email" class="form_input" required>
+                    </div>
+                    <div class="form_group">
+                        <label for="message" class="form_label">Message</label>
+                        <textarea id="message" class="form_textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="submit_btn">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="contact_info">
+                <div class="info_card">
+                    <div class="info_icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info_content">
+                        <h4 class="info_title">Email</h4>
+                        <p class="info_detail">rakshit.garg2023@vitstudent.ac.in</p>
+                    </div>
+                </div>
+                
+                <div class="info_card">
+                    <div class="info_icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info_content">
+                        <h4 class="info_title">Location</h4>
+                        <p class="info_detail">Vellore, Tamil Nadu, India</p>
+                    </div>
+                </div>
+                
+                <div class="info_card">
+                    <div class="info_icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="info_content">
+                        <h4 class="info_title">Social Profiles</h4>
+                        <div class="social_links">
+                            <a href="https://github.com/GargRakshit" class="social_link" target="_blank">
+                                <img src="images/github_logo.png" alt="GitHub" class="social_icon">
+                            </a>
+                            <a href="https://www.linkedin.com/in/rakshit-garg-0b22a3291/" class="social_link" target="_blank">
+                                <img src="images/linkedin_logo.png" alt="LinkedIn" class="social_icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer_content">
+            <div class="footer_logo">>_Portfolio</div>
+            <div class="footer_links">
+                <a href="#about_section" class="footer_link">About</a>
+                <a href="#skills_section" class="footer_link">Skills</a>
+                <a href="#projects_section" class="footer_link">Projects</a>
+                <a href="#contact_section" class="footer_link">Contact</a>
+            </div>
+            <div class="copyright">© 2024 Rakshit Garg. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
