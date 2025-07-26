@@ -62,8 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault()
-      const targetId = this.getAttribute("id")
-      const targetSection = document.getElementById(targetId + "_section")
+      const targetId = this.getAttribute("href").replace("#", "")
+      const targetSection = document.getElementById(targetId)
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" })
       }
